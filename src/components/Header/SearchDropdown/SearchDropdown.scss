@@ -1,0 +1,37 @@
+.filterDrawer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+}
+
+.mySearch {
+  margin: auto;
+}
+
+.location,
+.guests {
+  cursor: pointer;
+  padding: 0.9rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.myLocation,
+.myGuests {
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.addLocation,
+.addGuests {
+  font-size: 0.85rem;
+  color: black;
+}
+
+.empty {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #bdbdbd;
+}

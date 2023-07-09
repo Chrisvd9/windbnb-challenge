@@ -1,0 +1,87 @@
+main {
+  margin-top: 25px;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: #333333;
+      font-size: 24px;
+    }
+    span {
+      color: #4f4f4f;
+    }
+  }
+
+  .staysList {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    margin: 4rem auto 0 auto;
+  }
+  .errorMsg {
+    text-align: center;
+    margin-top: 5em;
+  }
+
+  .stays-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 40px;
+    margin-top: 20px;
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .head {
+      h1 {
+        font-size: 20px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  background-image: linear-gradient(#eb5757 50%, #c91717);
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px #eb5757, 0px 5px 20px 0px #eb5757;
+}
+
+.spinner1 {
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
