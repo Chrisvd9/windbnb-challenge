@@ -3,7 +3,7 @@ Challenge de la página DevChallenge.io, consiste en recrear una página sencill
 
 DevChallenge.io's challenge consists of recreating a simple responsive page with a search bar and filters. I used Vite, Sass, react-icons, and sonner.
 
-:point_right: [Live preview](https://windbnb-challenge-nu.vercel.app/)
+:point_right: [Live preview](https://windbnb-challenge-blwowf49p-chrisvd9.vercel.app/)
 
 Imagen 1:
 ![screenShot01](images/windbnb.png)
